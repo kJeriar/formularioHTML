@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inicio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class= "contenedor">
+    <title><h1>Formulario</h1></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <body>
+   <h1>Formulario</h1>
+      <p>Nombre:  <b class="campo_obligatorio">*</b></p>
+      <input type="text" name="nombre" size="20" maxlength="15">
+
+      <p>Apellidos: <b class="campo_obligatorio">*</b> </p>
+    
+      <input type="text" name="apellido" size="20" maxlength="15">
+
+      <p>Teléfono:  <b class="campo_obligatorio">*</b></p>
+      <input type="text" name="telefono" size="20">
+
+       <p>carro: <b class="campo_obligatorio">*<select name="carro" size="1">
+         <option selected value="clasico"> carro 1
+         <option value="city"> carro 2
+         <option value="deportivo"> carro 3
+         <option value="no"> carro 4
+       </select></p>
+
+      <p>Email: <b class="campo_obligatorio">*</b><br>
+  <input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></p>
+      <p>
+      Contraseña: <b class="campo_obligatorio">*</b><br>
+  <input type="password" name="contrasena" pattern=".{6,}" title="6 o más caracteres" required></p>
+      
+   <br />
+      <input type="submit" value="Enviar">
+    </form>
+    </script>
+<!-- JAVASCRIPT es preferible como ultima linea en el body -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
